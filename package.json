@@ -1,7 +1,33 @@
 {
-  "name": "hardhat-project",
+  "name": "pearwallet-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test test/test.ts",
+    "coverage": "npx hardhat coverage",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:baseGoerli": "npx hardhat run scripts/deploy.ts --network baseGoerli",
+    "compile:circuits": "bash scripts/compile-circuits.sh",
+    "setup:circom": "bash scripts/setup-circom.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PearWallet/pearwallet-contract.git"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "hardhat": "^2.14.0"
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@typechain/ethers-v5": "^10.1.0",
+    "circom_tester": "^0.0.11",
+    "circomlib": "^2.0.5",
+    "circomlib-matrix": "^1.0.1",
+    "circomlib-ml": "^1.1.0",
+    "circomlibjs": "^0.1.7",
+    "hardhat": "^2.14.0",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.9.4",
+    "dotenv": "^16.0.3"
   }
 }
