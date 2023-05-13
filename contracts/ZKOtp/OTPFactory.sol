@@ -3,7 +3,7 @@ pragma solidity ^0.8.12;
 
 import "./OTP.sol";
 
-abstract contract OTPFactory is OTP {
+ contract OTPFactory  {
     OTP[] private _otps;
 
     event ContractCreated(address newAddress);
