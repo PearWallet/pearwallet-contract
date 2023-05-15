@@ -2,8 +2,8 @@
 pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/utils/Address.sol";
-import "../interface/ILogicUpgradeControl.sol";
-import "../Storage.sol";
+import "../../interface/ILogicUpgradeControl.sol";
+import "../../Storage.sol";
 import "./ImplementationSlot.sol";
 
 

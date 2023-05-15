@@ -5,7 +5,7 @@ import "./interface/IEntryPoint.sol";
 import "./interface/IGuardianControl.sol";
 import "./interface/ILogicUpgradeControl.sol";
 import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
+import "./utils/upgradeable/Initializable.sol";
 
 library Storage {
     bytes32 private constant ACCOUNT_SLOT = keccak256("pearwallet.contracts.Storage");
