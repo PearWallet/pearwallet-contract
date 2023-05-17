@@ -6,8 +6,8 @@ pragma solidity ^0.8.17;
  */
 interface IGuardianControl {
     struct GuardianLayout {
-        // guardian now
-        address guardian;
+        // the list of guardians
+        address[] guardians;
         // wallet
         address wallet;
         // guardian next
@@ -18,8 +18,6 @@ interface IGuardianControl {
         uint32 guardianDelay;
         uint256[50] __gap;
     }
-
-
     /**
      * @dev Emitted when `guardian` is set. ( Just added, not yet reached the activate time )
      */
@@ -36,5 +34,4 @@ interface IGuardianControl {
     event GuardianCanceled(address guardian, address wallet);
 
     event GuardianRevoked(address guardian, address wallet);
-    
 }
