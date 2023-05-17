@@ -40,16 +40,17 @@ library Storage {
         /// └───────────────────┘
 
         /// ┌───────────────────┐
-        /// │    Module Manager    │
-        mapping(address => address) modules;
-        uint256[24] __moduleManagerGap;
-        /// ┌───────────────────┐
         /// │     guardian      │
         IGuardianControl.GuardianLayout guardian; // GuardianControl.sol
         // wallet specific storage
         mapping(address => IGuardianControl.GuardianLayout) guardianConfigs;
         uint256[50] __gap_3;
         /// └───────────────────┘
+
+        /// ┌───────────────────┐
+        /// │    Module Manager    │
+        mapping(address => address) modules;
+        uint256[50] __gap_4;
     }
 
     function layout() internal pure returns (Layout storage l) {
