@@ -50,7 +50,9 @@ contract GuardianControl is IGuardianControl {
             l.guardianDelay
         );
     }
-    function addGuardian() public {
 
-    }
+    // responsible for adding a guardian to the contract
+    function addGuardian() public {}
+
+    function removeGuardian() public {}
 }
