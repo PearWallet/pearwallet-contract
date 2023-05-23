@@ -15,6 +15,7 @@
     "url": "https://github.com/PearWallet/pearwallet-contract.git"
   },
   "devDependencies": {
+    "@chainlink/contracts": "^0.6.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@openzeppelin/contracts": "^4.2.0",
     "@openzeppelin/contracts-upgradeable": "^4.7.3",
